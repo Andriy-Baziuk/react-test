@@ -26,24 +26,6 @@
     <button id="calculateBtn">Розрахувати</button>
     <div id="result"></div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const calculateButton = document.getElementById("calculateBtn");
-            const resultDiv = document.getElementById("result");
-
-            calculateButton.addEventListener("click", function() {
-                const num1 = parseFloat(document.getElementById("num1").value);
-                const num2 = parseFloat(document.getElementById("num2").value);
-                const num3 = parseFloat(document.getElementById("num3").value);
-
-                if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
-                    resultDiv.textContent = "Будь ласка, введіть числа в усі поля.";
-                } else {
-                    const sum = num1 + num2 + num3;
-                    resultDiv.textContent = `Сума трьох чисел: ${sum}`;
-                }
-            });
-        });
-    </script>
+  
 </body>
 </html>
